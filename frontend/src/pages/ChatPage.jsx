@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import socket from "../services/socket";
 import { v4 as uuidv4 } from 'uuid';
 import { FaPaperPlane, FaComments, FaTimes } from 'react-icons/fa';
-import "../App.css"; // Reuse your CSS
+import "../App.css"
 
 const ChatPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,6 +70,7 @@ const ChatPage = () => {
       ))}
       <div ref={messagesEndRef} />
     </div>
+
 
     <div className="chat-input">
       <input
