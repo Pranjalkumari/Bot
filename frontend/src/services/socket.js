@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
 // Create a single instance to prevent multiple connections
-const socket = io("http://localhost:3002");
+const socket = io("http://localhost:4002");
 
 export default socket;
