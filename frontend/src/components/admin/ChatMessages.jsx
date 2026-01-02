@@ -4,13 +4,13 @@ const ChatMessages = ({ messages, messagesEndRef }) => {
       {messages.map((m, i) => (
         <div
           key={i}
-          className={`max-w-[70%] p-3 rounded-xl text-sm ${
+          className={`max-w-[70%] p-3 rounded-xl text-sm shadow-sm ${
             m.sender === "agent"
               ? "ml-auto bg-indigo-600 text-white"
-              : "bg-white border"
+              : "bg-white border text-slate-800"
           }`}
         >
-          <div className="text-[10px] font-bold uppercase mb-1">
+          <div className="text-[10px] font-bold uppercase mb-1 opacity-70">
             {m.sender}
           </div>
           {m.text}
