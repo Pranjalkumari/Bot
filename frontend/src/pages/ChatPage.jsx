@@ -41,7 +41,44 @@ const ChatPage = () => {
   };
 
   return (
-    <div className="font-sans">
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      
+      {/* Website Content */}
+      <header className="p-8 text-center">
+        <h1 className="text-4xl font-bold text-gray-800">
+          Customer Support Portal
+        </h1>
+        <p className="mt-4 text-gray-600 max-w-xl mx-auto">
+          Ask questions about our services, pricing, or technical support.
+          Our AI assistant is available 24/7.
+        </p>
+      </header>
+
+       <section className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h3 className="font-bold text-lg">📦 Orders</h3>
+          <p className="text-sm text-gray-500 mt-2">
+            Track orders and delivery status.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h3 className="font-bold text-lg">💳 Payments</h3>
+          <p className="text-sm text-gray-500 mt-2">
+            Refunds, invoices, and billing issues.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h3 className="font-bold text-lg">🛠 Support</h3>
+          <p className="text-sm text-gray-500 mt-2">
+            Technical and account help.
+          </p>
+        </div>
+      </section>
+
+
+
+
+   
       {/* Floating Button */}
      <button className="chat-toggle-btn" onClick={() => setIsOpen(!isOpen)}>
   {isOpen ? <FaTimes size={22} /> : <FaComments size={22} />}
